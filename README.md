@@ -16,8 +16,10 @@ __기한: ~2019.10.04__
 * 규칙
     * 최대한 파일 규칙 지키며 프로젝트 생성
     <img src="./Readme/firstAssingmentFileSystem.png">
+
     * viewcontroller 내의 가독성 유지를 위해 mark로 주석 생성
     <img src="./Readme/firstAssingmentComment.png">
+
 * 결과물
     <img src="./Readme/firstAssignmentResultGif.gif">
 
