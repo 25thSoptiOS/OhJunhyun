@@ -21,7 +21,8 @@ __기한: ~2019.10.04__
     <img src="./Readme/firstAssingmentComment.png">
 
 * 결과물
-    <img src="./Readme/firstAssignmentResultGif.gif">
+    
+<img src="./Readme/firstAssignmentResultGif.gif">
 
 
 ***
