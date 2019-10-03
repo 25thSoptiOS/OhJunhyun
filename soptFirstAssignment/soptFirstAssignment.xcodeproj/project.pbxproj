@@ -56,15 +56,71 @@
 		5EC094072341CCC300E388FD /* soptFirstAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				5EC0941F23424A3D00E388FD /* Sources */,
+				5EC0941D23424A0800E388FD /* Resources */,
+				5EC0941C23422E0D00E388FD /* SupportingFiles */,
+			);
+			path = soptFirstAssignment;
+			sourceTree = "<group>";
+		};
+		5EC0941C23422E0D00E388FD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				5EC094082341CCC300E388FD /* AppDelegate.swift */,
 				5EC0940A2341CCC300E388FD /* SceneDelegate.swift */,
-				5EC0940C2341CCC300E388FD /* ViewController.swift */,
+				5EC094162341CCCC00E388FD /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5EC0941D23424A0800E388FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5EC0940E2341CCC300E388FD /* Main.storyboard */,
 				5EC094112341CCCC00E388FD /* Assets.xcassets */,
 				5EC094132341CCCC00E388FD /* LaunchScreen.storyboard */,
-				5EC094162341CCCC00E388FD /* Info.plist */,
 			);
-			path = soptFirstAssignment;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5EC0941F23424A3D00E388FD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5EC0942423424A9D00E388FD /* Protocol */,
+				5EC0942323424A9900E388FD /* Views */,
+				5EC0942223424A9200E388FD /* Extensions */,
+				5EC0942123424A8100E388FD /* ViewControllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5EC0942123424A8100E388FD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EC0940C2341CCC300E388FD /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5EC0942223424A9200E388FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5EC0942323424A9900E388FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EC0942423424A9D00E388FD /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78A867AHKF;
-				INFOPLIST_FILE = soptFirstAssignment/Info.plist;
+				INFOPLIST_FILE = soptFirstAssignment/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-anniversary.tistory.com.soptFirstAssignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78A867AHKF;
-				INFOPLIST_FILE = soptFirstAssignment/Info.plist;
+				INFOPLIST_FILE = soptFirstAssignment/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-anniversary.tistory.com.soptFirstAssignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
