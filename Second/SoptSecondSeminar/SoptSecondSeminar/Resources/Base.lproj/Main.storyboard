@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PIF-zv-zka">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6rl-HE-2rb">
+            <objects>
+                <navigationController id="PIF-zv-zka" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l7a-6j-iQM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="G4V-cr-lMa" kind="relationship" relationship="rootViewController" id="gfl-Ma-BaP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ApU-zK-9sJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="poD-Hx-jEL">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="G4V-cr-lMa" customClass="ViewController" customModule="SoptSecondSeminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHo-dW-hrS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ys6-eY-MDM">
+                                <rect key="frame" x="192" y="277" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pink"/>
+                                <connections>
+                                    <segue destination="Fkt-D8-6yF" kind="show" id="ZIx-LS-oay"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGY-tD-9Gz">
+                                <rect key="frame" x="186" y="374" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Green"/>
+                                <connections>
+                                    <segue destination="6yz-SD-dnz" kind="show" id="izs-Xe-luJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="yhE-IT-6nu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uct-kB-syT"/>
+                    <connections>
+                        <outlet property="greenButton" destination="DGY-tD-9Gz" id="gae-Qd-S4G"/>
+                        <outlet property="pinkButton" destination="Ys6-eY-MDM" id="Buv-mF-v8w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbO-Gi-WKy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="92"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="oMO-vs-zAw">
+            <objects>
+                <viewController restorationIdentifier="GreenViewController" storyboardIdentifier="GreenViewController" id="6yz-SD-dnz" customClass="GreenViewController" customModule="SoptSecondSeminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hq5-1o-5PO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TfL-jH-ymZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dkl-Pp-Syt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UpN-5R-MEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="738"/>
+        </scene>
+        <!--Pink View Controller-->
+        <scene sceneID="mSo-w6-vEV">
+            <objects>
+                <viewController restorationIdentifier="PinkViewController" storyboardIdentifier="PinkViewController" id="Fkt-D8-6yF" customClass="PinkViewController" customModule="SoptSecondSeminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WMx-iu-Pct">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="y13-2q-wCm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2IO-ac-Ag7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYc-bp-Qcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="92"/>
+        </scene>
+    </scenes>
+</document>
