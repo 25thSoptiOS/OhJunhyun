@@ -14,6 +14,7 @@
 		5E6DE62D2351AD830087DFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6DE62C2351AD830087DFE0 /* Assets.xcassets */; };
 		5E6DE6302351AD830087DFE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6DE62E2351AD830087DFE0 /* LaunchScreen.storyboard */; };
 		5E895D7923530D3B00F02166 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E895D7823530D3B00F02166 /* UIButton+Extensions.swift */; };
+		5EB1EF4A23571D5B00379CED /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1EF4923571D5B00379CED /* UITextField+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5E6DE62F2351AD830087DFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E6DE6312351AD830087DFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E895D7823530D3B00F02166 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		5EB1EF4923571D5B00379CED /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5E895D7823530D3B00F02166 /* UIButton+Extensions.swift */,
+				5EB1EF4923571D5B00379CED /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB1EF4A23571D5B00379CED /* UITextField+Extension.swift in Sources */,
 				5E6DE6282351AD800087DFE0 /* LoginVC.swift in Sources */,
 				5E895D7923530D3B00F02166 /* UIButton+Extensions.swift in Sources */,
 				5E6DE6242351AD800087DFE0 /* AppDelegate.swift in Sources */,
