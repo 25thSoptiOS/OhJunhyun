@@ -1,30 +1,33 @@
 //
-//  ViewController.swift
+//  SecondLoginViewController.swift
 //  SoptSecondStackView
 //
-//  Created by Junhyeon on 2019/10/12.
+//  Created by Junhyeon on 2019/10/20.
 //  Copyright © 2019 Junhyeon. All rights reserved.
 //
 
 import UIKit
 
-class LoginVC: UIViewController {
-    
+class SecondLoginViewController: UIViewController {
     
     @IBOutlet weak var logoImgView: UIImageView!
     @IBOutlet weak var idView: UIView!
     @IBOutlet weak var pwView: UIView!
-    @IBOutlet weak var idTextField: UITextField!
-    @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var idLine: UIView!
+    @IBOutlet weak var loginUserid: UITextField!
+    @IBOutlet weak var loginPassword: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var signupBtn: UIButton!
     @IBOutlet weak var stackViewCenterY: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initGestureRecognizer()
         loginBtn.makeButtonRadius(0.64, .white, 20)
+        
+        idLine.layer.borderWidth = 20
     }
     
     // 키보드 제어하는 메소드
@@ -35,11 +38,10 @@ class LoginVC: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         unregisterForKeyboardNotifications()
     }
-
-    
 }
 
-extension LoginVC : UIGestureRecognizerDelegate {
+
+extension SecondLoginViewController : UIGestureRecognizerDelegate {
     
     func initGestureRecognizer() {
         let textFieldTap = UITapGestureRecognizer(target: self, action: #selector(handleTapTextField(_:)))
@@ -49,13 +51,13 @@ extension LoginVC : UIGestureRecognizerDelegate {
     
     // 다른 위치 탭했을 때 키보드 없어지는 코드
     @objc func handleTapTextField(_ sender: UITapGestureRecognizer) {
-        self.idTextField.resignFirstResponder()
-        self.pwTextField.resignFirstResponder()
+        self.loginUserid.resignFirstResponder()
+        self.loginPassword.resignFirstResponder()
     }
     
     
     func gestureRecognizer(_ gestrueRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        if (touch.view?.isDescendant(of: idTextField))! || (touch.view?.isDescendant(of: pwTextField))! {
+        if (touch.view?.isDescendant(of: loginUserid))! || (touch.view?.isDescendant(of: loginPassword))! {
             return false
         }
         return true
