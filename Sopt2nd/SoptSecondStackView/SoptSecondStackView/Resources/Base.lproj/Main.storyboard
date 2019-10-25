@@ -178,11 +178,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4H-LY-qv1">
-                                                <rect key="frame" x="0.0" y="41" width="277" height="2"/>
+                                                <rect key="frame" x="0.0" y="41" width="277" height="1"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="bAX-fo-q5Q"/>
+                                                </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="login" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8j-hl-rS1">
-                                                <rect key="frame" x="28.666666666666686" y="9" width="248" height="35.333333333333336"/>
+                                                <rect key="frame" x="28.666666666666686" y="9" width="248" height="37.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="248" id="BUf-Vk-ohZ"/>
                                                 </constraints>
